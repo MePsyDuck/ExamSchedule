@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ddb8a76d-a10a-4faf-809d-28d2bc252903" name="Default Changelist" comment="" />
+    <list default="true" id="ddb8a76d-a10a-4faf-809d-28d2bc252903" name="Default Changelist" comment="Added requirements">
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ExamSchedule.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/20555922-9a8e-487b-906f-f52f30cb388e.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/20555922-9a8e-487b-906f-f52f30cb388e/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9df94ea5-04a6-4d1f-a8dd-8ce770dfa4b7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9df94ea5-04a6-4d1f-a8dd-8ce770dfa4b7/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/pc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainApp/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/MainApp/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/MainApp/views.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,50 +67,58 @@
           <entry key="project.closed" value="1" />
           <entry key="project.open.time.147" value="1" />
           <entry key="project.open.time.33" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.37" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="auth_user" value="4" />
+          <entry key="gitattributes" value="1" />
+          <entry key="gitignore" value="2" />
           <entry key="html" value="13" />
           <entry key="mainapp_schedule" value="11" />
           <entry key="py" value="27" />
+          <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Database Element" value="15" />
+          <entry key="Git file" value="2" />
           <entry key="HTML" value="13" />
+          <entry key="PLAIN_TEXT" value="2" />
           <entry key="Python" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Django Console" value="296" />
+          <entry key="gitignore" value="31" />
           <entry key="html" value="315" />
-          <entry key="py" value="1780" />
+          <entry key="py" value="1836" />
+          <entry key="txt" value="65" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="Git file" value="31" />
           <entry key="HTML" value="315" />
-          <entry key="Python" value="2076" />
+          <entry key="PLAIN_TEXT" value="65" />
+          <entry key="Python" value="2132" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MainApp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+            <state relative-caret-position="391">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
-                <marker date="1537170809351" expanded="true" signature="171:239" ph="..." />
-                <marker date="1537170809351" expanded="true" signature="266:267" ph="..." />
               </folding>
             </state>
           </provider>
@@ -103,7 +127,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/student_login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
+            <state relative-caret-position="510">
               <caret line="45" column="7" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
             </state>
           </provider>
@@ -112,11 +136,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MainApp/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="46" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="46" />
+            <state relative-caret-position="323">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -131,6 +164,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -141,8 +177,10 @@
         <option value="$PROJECT_DIR$/templates/student_login.html" />
         <option value="$PROJECT_DIR$/ExamSchedule/urls.py" />
         <option value="$PROJECT_DIR$/MainApp/models.py" />
-        <option value="$PROJECT_DIR$/MainApp/forms.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/MainApp/views.py" />
+        <option value="$PROJECT_DIR$/MainApp/forms.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
       </list>
     </option>
   </component>
@@ -152,11 +190,12 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="694" />
     <option name="height" value="775" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -169,16 +208,6 @@
             <path>
               <item name="ExamSchedule" type="b2602c69:ProjectViewProjectNode" />
               <item name="ExamSchedule" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ExamSchedule" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ExamSchedule" type="462c0819:PsiDirectoryNode" />
-              <item name="MainApp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ExamSchedule" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ExamSchedule" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -277,8 +306,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16413374" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16641337" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -295,6 +325,7 @@
       <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49924013" visible="true" weight="0.32890856" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5007599" side_tool="true" weight="0.32890856" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.32890856" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.32890856" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -332,6 +363,15 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="Added requirements" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added requirements" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/templates/faculty_login.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -366,13 +406,7 @@
     <entry file="file://$PROJECT_DIR$/MainApp/migrations/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="das://20555922-9a8e-487b-906f-f52f30cb388e/schema/main/table/auth_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://20555922-9a8e-487b-906f-f52f30cb388e/schema/main/table/auth_user" />
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5508">
@@ -389,13 +423,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://20555922-9a8e-487b-906f-f52f30cb388e/schema/main/table/mainapp_schedule">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://20555922-9a8e-487b-906f-f52f30cb388e/schema/main/table/mainapp_schedule" />
     <entry file="das://9df94ea5-04a6-4d1f-a8dd-8ce770dfa4b7/schema/main/table/auth_user">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -427,32 +455,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitattributes">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/student_login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
+        <state relative-caret-position="510">
           <caret line="45" column="7" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MainApp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MainApp/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="46" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="46" />
+        <state relative-caret-position="323">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MainApp/views.py">
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-            <marker date="1537170809351" expanded="true" signature="171:239" ph="..." />
-            <marker date="1537170809351" expanded="true" signature="266:267" ph="..." />
-          </folding>
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>

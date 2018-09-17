@@ -14,11 +14,8 @@ def show_schedule(request):
         form = StudLoginForm(request.POST)
         print(form.errors, form.non_field_errors)
         if form.is_valid():
-            #vtu_id = form.get_vtu()
-            schedule = Schedule.objects.filter(vtu_id=45)
-            for keys, values in form.cleaned_data.items():
-                print(keys)
-                print(values)
+            vtu_id = form.get_vtu()
+            schedule = Schedule.objects.filter(vtu_id=vtu_id)
             return render(request, 'view.html', {'schedule': schedule})
         else:
             return redirect('/login/')
