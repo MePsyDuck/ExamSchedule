@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<title>STUDENT LOGIN PAGE</title>
+<style>
+    body {
+        background: #454840;
+    }
+
+    table {
+        background: #2358d0;
+        padding: 30px;
+        width: 500px;
+        margin: auto;
+        font-size: 20px;
+        color: white;
+
+    }
+
+    input {
+        padding: 5px;
+        margin-top: 20px;
+        font-size: 20px;
+        border: none;
+        border-radius: 500px;
+    }
+
+    input[type=submit] {
+        width: 20%;
+        margin-left: 250px;
+        background: #789e08;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 500px;
+    }
+</style>
+<head>
+</head>
+<body>
+<h1 align="center"><span style="color: aqua; "><u>STUDENT EXAMINATION PORTAL</u></span></h1>
+<form name="form" action="{% url "show_schedule" %}" method="post">{% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="save btn btn-default">Get Schedule</button>
+</form>
+</body>
+</html>
