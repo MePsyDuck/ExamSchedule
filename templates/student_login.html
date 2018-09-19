@@ -1,46 +1,40 @@
+{% load static %}
 <!DOCTYPE html>
-<html>
-<title>STUDENT LOGIN PAGE</title>
-<style>
-    body {
-        background: #454840;
-    }
-
-    table {
-        background: #2358d0;
-        padding: 30px;
-        width: 500px;
-        margin: auto;
-        font-size: 20px;
-        color: white;
-
-    }
-
-    input {
-        padding: 5px;
-        margin-top: 20px;
-        font-size: 20px;
-        border: none;
-        border-radius: 500px;
-    }
-
-    input[type=submit] {
-        width: 20%;
-        margin-left: 250px;
-        background: #789e08;
-        color: white;
-        border: none;
-        padding: 10px;
-        border-radius: 500px;
-    }
-</style>
+<html lang="en">
 <head>
+    <title>Examination Room/Hall Finder</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{% static "css/back.css" %}">
+    <link rel="icon" type="image/png" href="{% static "images/icons/headicon.ico" %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static "css/util.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "css/main.css" %}">
 </head>
 <body>
-<h1 align="center"><span style="color: aqua; "><u>STUDENT EXAMINATION PORTAL</u></span></h1>
-<form name="form" action="{% url "show_schedule" %}" method="post">{% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit" class="save btn btn-default">Get Schedule</button>
-</form>
+
+<div class="limiter">
+    <div class="container-login100">
+        <div class="wrap-login100">
+            <form class="login100-form validate-form p-l-55 p-r-55 p-t-178" name="form"
+                  action="{% url "show_schedule" %}" method="post">
+                {% csrf_token %}
+                <span class="login100-form-title">
+						Examination Room/Hall Finder
+                </span>
+                <div class="wrap-input100 validate-input m-b-16" data-validate="Please enter username">
+                    <input class="input100" type="text" name="vtu_id" placeholder="VTU ID">
+                    <span class="focus-input100"></span>
+                </div>
+                <div class="container-login100-form-btn">
+                    <button class="login100-form-btn">
+                        Log in
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
 </body>
 </html>
