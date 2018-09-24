@@ -12,7 +12,6 @@ def login(request):
 def show_schedule(request):
     if request.method == "POST":
         form = StudLoginForm(request.POST)
-        print(form.errors, form.non_field_errors)
         if form.is_valid():
             vtu_id = form.get_vtu()
             schedule = Schedule.objects.filter(vtu_id=vtu_id)

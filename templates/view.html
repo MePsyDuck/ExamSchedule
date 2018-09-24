@@ -1,12 +1,46 @@
-{% load django_tables2 %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Examination Hall/Room Finder</title>
     <meta charset="UTF-8">
-    <title>Schedule</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="{% static "images/icons/headicon.ico" %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static "css/util.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "css/main.css" %}">
+
 </head>
-<body>
-{% render_table schedule %}
+<body background="{% static "images/exam1.jpg" %}">
+
+<div class="limiter">
+    <div class="container-login100">
+        <div class="wrap-login100">
+            <form class="login100-form validate-form p-l-55 p-r-55 p-t-178">
+                <span class="login100-form-title">
+                    Examination Hall Details
+                </span>
+                <table border="1" width="40%" align="center" style="margin-top:10px; margin-bottom:40px;">
+                    <tr></tr>
+                    {% if event is not None %}
+                        {% for event in schedule %}
+                            <tr>
+                                <td><span style="font-family: Arial,serif; ">{{ event.id }}</span></td>
+                                <td><span style="font-family: Arial,serif; ">{{ event.vtu_id }}</span></td>
+                                <td><span style="font-family: Arial,serif; ">{{ event.tts_id }}</span></td>
+                                <td><span style="font-family: Arial,serif; ">{{ event.sub_id }}</span></td>
+                                <td><span style="font-family: Arial,serif; ">{{ event.room_id }}</span></td>
+                                <td><span style="font-family: Arial,serif; ">{{ event.seat_id }}</span></td>
+                                <td><span style="font-family: Arial,serif; ">{{ event.date }}</span></td>
+                                <td><span style="font-family: Arial,serif; ">{{ event.session }}</span></td>
+                            </tr>
+                        {% endfor %}
+                    {% else %}
+                        <p>No Data Found</p>
+                    {% endif %}
+                </table>
+            </form>
+        </div>
+    </div>
+</div>
 </body>
 </html>
-
