@@ -13,7 +13,7 @@
             font-family: Arial, serif;
             width: 1px;
             white-space: nowrap;
-            padding: 5px;
+            padding: 2px;
         }
     </style>
 </head>
@@ -43,12 +43,8 @@
                                 <td>{{ event.sub_id }}</td>
                                 <td>{{ event.room_id }}</td>
                                 <td>{{ event.seat_id }}</td>
-                                <td>
-                                    <span style="">
-                                    {{ event.date }}
-                                    </span>
-                                </td>
-                                <td><span style="font-family: Arial,serif; ">{{ event.session }}</span></td>
+                                <td>{{ event.date }}</td>
+                                <td>{{ event.session }}</td>
                             </tr>
                         {% endfor %}
                     {% else %}
