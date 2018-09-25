@@ -15,7 +15,7 @@ def show_schedule(request):
         if form.is_valid():
             vtu_id = form.get_vtu()
             schedule = Schedule.objects.filter(vtu_id=vtu_id)
-            return render(request, 'view.html', {'schedule': schedule})
+            return render(request, 'view.html', {'schedule': schedule, 'vtu_id': vtu_id})
         else:
             return redirect('/login/')
     else:

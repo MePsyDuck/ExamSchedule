@@ -8,29 +8,46 @@
     <link rel="icon" type="image/png" href="{% static "images/icons/headicon.ico" %}"/>
     <link rel="stylesheet" type="text/css" href="{% static "css/util.css" %}">
     <link rel="stylesheet" type="text/css" href="{% static "css/main.css" %}">
-
+    <style>
+        td {
+            font-family: Arial, serif;
+            width: 1px;
+            white-space: nowrap;
+            padding: 5px;
+        }
+    </style>
 </head>
 <body background="{% static "images/exam1.jpg" %}">
 
 <div class="limiter">
     <div class="container-login100">
         <div class="wrap-login100">
-            <form class="login100-form validate-form p-l-55 p-r-55 p-t-178">
+            <form class="login100-form validate-form p-l-5 p-r-5 p-t-178">
                 <span class="login100-form-title">
                     Examination Hall Details
                 </span>
-                <table border="1" width="40%" align="center" style="margin-top:10px; margin-bottom:40px;">
-                    <tr></tr>
+                VTU ID: {{ vtu_id }}
+                <table border="1px" width="40%" align="center" style="margin-top:10px; margin-bottom:40px;">
                     {% if schedule is not None %}
+                        <tr>
+                            <td>TTS ID</td>
+                            <td>SUB ID</td>
+                            <td>ROOM ID</td>
+                            <td>SEAT ID</td>
+                            <td>Date</td>
+                            <td>SESSION</td>
+                        </tr>
                         {% for event in schedule %}
                             <tr>
-                                <td><span style="font-family: Arial,serif; ">{{ event.id }}</span></td>
-                                <td><span style="font-family: Arial,serif; ">{{ event.vtu_id }}</span></td>
-                                <td><span style="font-family: Arial,serif; ">{{ event.tts_id }}</span></td>
-                                <td><span style="font-family: Arial,serif; ">{{ event.sub_id }}</span></td>
-                                <td><span style="font-family: Arial,serif; ">{{ event.room_id }}</span></td>
-                                <td><span style="font-family: Arial,serif; ">{{ event.seat_id }}</span></td>
-                                <td><span style="font-family: Arial,serif; ">{{ event.date }}</span></td>
+                                <td>{{ event.tts_id }}</td>
+                                <td>{{ event.sub_id }}</td>
+                                <td>{{ event.room_id }}</td>
+                                <td>{{ event.seat_id }}</td>
+                                <td>
+                                    <span style="">
+                                    {{ event.date }}
+                                    </span>
+                                </td>
                                 <td><span style="font-family: Arial,serif; ">{{ event.session }}</span></td>
                             </tr>
                         {% endfor %}
