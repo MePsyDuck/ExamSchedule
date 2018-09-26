@@ -1,19 +1,14 @@
 from django import forms
 
-from MainApp.models import Schedule
-
 
 class StudLoginForm(forms.ModelForm):
-
-    class Meta:
-        model = Schedule
-        fields = ['vtu_id', ]
+    user_id = forms.CharField()
 
     # TODO maybe add password validation in future
     # password = forms.CharField(widget=forms.PasswordInput())
 
-    def get_vtu(self):
+    def get_id(self):
         if self.is_valid():
-            return self.cleaned_data.get('vtu_id')
+            return self.cleaned_data.get('user_id')
         else:
             print(self.errors)

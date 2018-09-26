@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Examination Hall/Room Finder</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="{% static "images/icons/headicon.ico" %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static "css/util.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "css/main.css" %}">
+    <style>
+        td {
+            font-family: Arial, serif;
+            width: 1px;
+            white-space: nowrap;
+            padding: 2px;
+        }
+    </style>
+</head>
+<body background="{% static "images/exam1.jpg" %}">
+
+<div class="limiter">
+    <div class="container-login100">
+        <div class="wrap-login100">
+            <form class="login100-form validate-form p-l-5 p-r-5 p-t-178">
+                <span class="login100-form-title">
+                    Examination Hall Details
+                </span>
+                TTS ID: {{ tts_id }}
+                <table border="1px" width="40%" align="center" style="margin-top:10px; margin-bottom:40px;">
+                    {% if schedule is not None %}
+                        <tr>
+                            <td>SUB ID</td>
+                            <td>ROOM ID</td>
+                            <td>Date</td>
+                            <td>SESSION</td>
+                        </tr>
+                        {% for event in schedule %}
+                            <tr>
+                                <td>{{ event.sub_id }}</td>
+                                <td>{{ event.room_id }}</td>
+                                <td>{{ event.date }}</td>
+                                <td>{{ event.session }}</td>
+                            </tr>
+                        {% endfor %}
+                    {% else %}
+                        <p>No Data Found</p>
+                    {% endif %}
+                </table>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
