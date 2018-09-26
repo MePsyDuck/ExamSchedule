@@ -33,8 +33,7 @@
                             <td>TTS ID</td>
                             <td>SUB ID</td>
                             <td>ROOM ID</td>
-                            <td>SEAT ID</td>
-                            <td>Date</td>
+                            <td>DATE</td>
                             <td>SESSION</td>
                         </tr>
                         {% for event in schedule %}
@@ -42,7 +41,6 @@
                                 <td>{{ event.tts_id }}</td>
                                 <td>{{ event.sub_id }}</td>
                                 <td>{{ event.room_id }}</td>
-                                <td>{{ event.seat_id }}</td>
                                 <td>{{ event.date }}</td>
                                 <td>{{ event.session }}</td>
                             </tr>
