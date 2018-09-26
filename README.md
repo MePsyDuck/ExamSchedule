@@ -1,16 +1,9 @@
 # ExamSchedule
-from django_seed import Seed
 
-seeder = Seed.seeder()
+To seed the database
 
-from myapp.models import Game, Player
-seeder.add_entity(Game, 5)
-seeder.add_entity(Player, 10)
+`python manage.py shell < db_seed.py`
 
-inserted_pks = seeder.execute()
+After deleting db:
 
-seeder.add_entity(Player, 10, {
-    'score':    lambda x: random.randint(0,1000),
-    'nickname': lambda x: seeder.faker.email(),
-})
-seeder.execute()
+`python manage.py migrate --run-syncdb`
