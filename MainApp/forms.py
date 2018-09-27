@@ -1,7 +1,7 @@
 from django import forms
 
 
-class StudLoginForm(forms.ModelForm):
+class StudLoginForm(forms.Form):
     user_id = forms.CharField()
 
     # TODO maybe add password validation in future
