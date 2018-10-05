@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Examination Schedule</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{% static "css/back.css" %}">
+    <link rel="icon" type="image/png" href="{% static "images/icons/headicon.ico" %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static "css/util.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "css/main.css" %}">
+
+</head>
+<body>
+<form action="{% url "add_schedule" %}" method="POST">
+    {% csrf_token %}
+    {{ form.as_ul }}
+    <button> Submit</button>
+</form>
+</body>
+</html>

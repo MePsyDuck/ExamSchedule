@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 
-from MainApp.forms import StudLoginForm
+from MainApp.forms import StudLoginForm, AddNewSchedule
 from MainApp.models import Schedule
 
 
@@ -10,7 +10,7 @@ def login(request):
 
 
 def show_schedule(request):
-    if request.method == "POST":
+    if request.method == 'POST':
         form = StudLoginForm(request.POST)
         if form.is_valid():
             user_id = form.get_id()
@@ -25,3 +25,15 @@ def show_schedule(request):
             return redirect('/login/')
     else:
         return redirect('/login/')
+
+
+def add_schedule(request):
+    if request.method == 'POST':
+        form = AddNewSchedule(request.POST)
+        print(form.is_valid())
+        print(str(form.cleaned_data))
+        form.process_ids()
+        return redirect('/addschedule/')
+    else:
+        form = AddNewSchedule()
+        return render(request, 'addschedule.html', {'form': form})
