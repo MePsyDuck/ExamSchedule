@@ -30,9 +30,7 @@ def show_schedule(request):
 def add_schedule(request):
     if request.method == 'POST':
         form = AddNewSchedule(request.POST)
-        print(form.is_valid())
-        print(str(form.cleaned_data))
-        form.process_ids()
+        print(form.process_ids())
         return redirect('/addschedule/')
     else:
         form = AddNewSchedule()
